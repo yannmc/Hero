@@ -1,4 +1,8 @@
-/*Java Script*/
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Made by Yann Morin Charbonneau - Github : @yannmc
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 
 //Initialisation of all global variables
 var setWarrior = setInterval(warriorAttack,Number(localStorage.warriorAttackSpeed));
