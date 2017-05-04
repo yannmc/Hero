@@ -1,0 +1,140 @@
+/*Code CSS*/
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+ul li{
+  float: left;
+  width: 200px;
+  text-align: center;
+  line-height: 21px;
+  border: 1px solid rgba(255,255,255,1);
+  font: normal 25px/1 Impact, Charcoal, sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+ul li a{
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  background: rgba(154,237,165,1);
+  text-decoration: none;
+  border-radius: 10px;
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.97) ;
+  background: linear-gradient(180deg, rgba(10,119,213,1) 0, rgba(83,159,225,1) 80%, rgba(191,219,242,1) 100%), #0282d8;
+}
+ul li a:hover{
+  color: #bbb;
+  background: rgba(154,220,150,1);
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.97) ;
+  background: linear-gradient(180deg, rgba(0,63,114,1) 0, rgba(83,159,225,1) 82%, rgba(191,219,242,1) 100%), #0282d8;
+}
+ul li ul{
+  display: none;
+}
+ul li:hover ul{
+  display: block; /* display the dropdown */
+}
+
+.table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infos{
+  width: 100%;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  vertical-align:50px;
+  position: fixed;
+  bottom: 0;
+  color: #FF0000;
+  margin: 0 0 15px 0;
+  font: normal 23px/1 Impact, Charcoal, sans-serif;
+}
+
+.gold{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FFCC00;
+  vertical-align:75px;
+  position: fixed;
+  bottom: 0;
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.97) ;
+  margin: 0 0 65px 0;
+  font: normal 45px/1 Impact, Charcoal, sans-serif;
+}
+
+#monster{
+  width: 300px;
+  height: 250px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 200px 489px;
+  cursor: url(image/sword.png), crosshair;
+  background: url(image/monster1.gif);
+  background-size: 300px 250px;
+}
+
+.health{
+  color: rgba(255,255,255,1);
+  bottom: 0;
+  width: 40%;
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.97) ;
+  margin: 525px 0 150px 394px;
+  position: fixed;
+  background: #e74c3c;
+  border-radius: 10px;
+  text-align: center;
+  font: normal normal bold 24px/1 "Courier New", Courier, monospace;
+}
+
+.exp{
+  color: rgba(255,255,255,1);
+  bottom: 0;
+  width: 30%;
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.97) ;
+  margin: 525px 0 120px 454px;
+  position: fixed;
+  background: rgb(51,153,255);
+  border-radius: 10px;
+  text-align: center;
+  font: normal normal bold 20px/1 "Courier New", Courier, monospace;
+}
+
+#minionWarrior{
+  width: 140px;
+  height: 140px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 210px 350px;
+}
+
+#minionArcher{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 200px 825px;
+}
+
+#minionWizard{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 205px 200px;
+}
+
+#minionMiner{
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 190px 970px;
+}

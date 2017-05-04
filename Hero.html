@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="UTF8">
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Hero.css">
+  <script src="Hero.js"></script>
+  <title>Hero</title>
+</head>
+<body onload="onLoad()">
+  <table class="table">
+    <tr>
+      <td>
+        <ul>
+          <li><a href="#" onmouseover="toolTip(1)" onmouseout="clearInfo()" onclick="newGame()">New Game</a></li>
+          <li>
+            <a href="#" onmouseover="toolTip(2)" onmouseout="clearInfo()">Upgrade &#9662;</a>
+            <ul>
+              <li><a href="#" onmouseover="toolTip(3)" onmouseout="clearInfo()" onclick="increaseDamage()">Increase Attack Damage</a></li>
+              <li><a href="#" onmouseover="toolTip(4)" onmouseout="clearInfo()" onclick="increaseCritChance()">Increase Critical Hit Chance</a></li>
+              <li><a href="#" onmouseover="toolTip(5)" onmouseout="clearInfo()" onclick="increaseGoldDrop()">Increase Gold Drop</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" onmouseover="toolTip(6)" onmouseout="clearInfo()">Minions &#9662;</a>
+            <ul>
+              <li><a href="#" id="Warrior" onmouseover="toolTip(7)" onmouseout="clearInfo()" onclick="buyWarrior()">Buy Warrior</a></li>
+              <li><a href="#" id="Archer" onmouseover="toolTip(8)" onmouseout="clearInfo()" onclick="buyArcher()">Buy Archer</a></li>
+              <li><a href="#" id="Wizard" onmouseover="toolTip(9)" onmouseout="clearInfo()" onclick="buyWizard()">Buy Wizard</a></li>
+              <li><a href="#" id="Miner" onmouseover="toolTip(22)" onmouseout="clearInfo()" onclick="buyMiner()">Buy Miner</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" onmouseover="toolTip(10)" onmouseout="clearInfo()">Skills &#9662;</a>
+            <ul>
+              <li><a href="#" onmouseover="toolTip(11)" onmouseout="clearInfo()">Skill 1</a></li>
+              <li><a href="#" onmouseover="toolTip(12)" onmouseout="clearInfo()">Skill 2</a></li>
+              <li><a href="#" onmouseover="toolTip(13)" onmouseout="clearInfo()">Skill 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#" onmouseover="toolTip(19)" onmouseout="clearInfo()">Stats</a></li>
+          <li>
+            <a href="#" onmouseover="toolTip(14)" onmouseout="clearInfo()">Settings &#9662;</a>
+            <ul>
+              <li><a href="#" id="tips" onmouseover="toolTip(20)" onmouseout="clearInfo()" onclick="toolTipState()">Tool Tip</a></li>
+              <li><a href="#" id="tips" onmouseover="toolTip(21)" onmouseout="clearInfo()" onclick="help()">Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <div id="monster" onclick="isDead();" onmouseover="toolTip(15)" onmouseout="clearInfo()"></div>
+  <div class="health" id="bar" onmouseover="toolTip(16)" onmouseout="clearInfo()">Monster #1 - 100 HP / 100 HP</div>
+  <div class="exp" id="Exp" onmouseover="toolTip(18)" onmouseout="clearInfo()">Level 1 - 0 exp  / 100 exp</div>
+  <div id="Gold" class="gold" onmouseover="toolTip(17)" onmouseout="clearInfo()">0 Gold</div>
+  <div id="information" class="infos"></div>
+  <div id="minionWarrior" onmouseover="toolTip(23)" onmouseout="clearInfo()"></div>
+  <div id="minionArcher" onmouseover="toolTip(24)" onmouseout="clearInfo()"></div>
+  <div id="minionWizard" onmouseover="toolTip(25)" onmouseout="clearInfo()"></div>
+  <div id="minionMiner" onmouseover="toolTip(26)" onmouseout="clearInfo()"></div>
+</body>
+</html>
